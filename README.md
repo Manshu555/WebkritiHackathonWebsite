@@ -20,9 +20,7 @@ Sponsors
 
 </details>
 
-## Hosted URL
 
-Explore our awesome Hackathon project with a stunning user interface: [Check it out here](https://sahil7741.github.io/UpStyle/frontend/html/index.html)!
 
 ## Features
 
