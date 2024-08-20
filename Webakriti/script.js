@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     const response = await axios.post("https://webkritihackathonwebsite.onrender.com/user/login", userInfo);
                     alert("Logged in successfully");
                     localStorage.setItem("Users", JSON.stringify(response.data.user));
-                    window.location.href = "/Webakriti/participant-form.html"; // Redirect after login
+                    window.location.href = "./participant-form.html"; // Redirect after login
                 } catch (err) {
                     const errorMessage = err.response?.data?.message || "Incorrect username or password.";
                     alert("Login Error: " + errorMessage);
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // User is logged in, change "Login" to "Logout"
         if (loginNavItem) {
             loginNavItem.textContent = "Logout";
-            loginNavItem.href = "participant-form.html"; // Prevent navigation to login page
+            loginNavItem.href = "./participant-form.html"; // Prevent navigation to login page
 
             // Add click event listener for logout
             loginNavItem.addEventListener("click", () => {
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (navMenu) {
             const participantFormNavItem = document.createElement("li");
             const participantFormLink = document.createElement("a");
-            participantFormLink.href = "/Webakriti/participant-form.html";
+            participantFormLink.href = "./participant-form.html";
             participantFormLink.textContent = "Participant Form";
             participantFormNavItem.appendChild(participantFormLink);
             navMenu.appendChild(participantFormNavItem);
